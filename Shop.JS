@@ -44,20 +44,22 @@ const Stuff = [
 
 
 
-function filter(array,category){
+function filter(array, category) {
     let relevant = [];
-    for(items of array){
-        if(items.category === category){
+
+    for (const items of array) {
+        if (items.category === category) {
             relevant.push(items.name);
         }
-        else{
-            return "Not found";
-        }
-
-
     }
+
+    if (relevant.length === 0) {
+        return "Not found";
+    }
+
     return relevant;
 }
+
 
 
 
