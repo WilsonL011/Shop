@@ -1,6 +1,7 @@
 // SHOP
 // CLEANING SUPPLIES
 
+
 const Stuff = [
     // Detergents
     { name: "Eco Friendly", price: 28.99, category: "Detergents" },
@@ -8,10 +9,12 @@ const Stuff = [
     { name: "Detergent Pods", price: 10.99, category: "Detergents" },
     { name: "Free And Clear", price: 18.99, category: "Detergents" },
 
+
     // Original placeholder replacements
     { name: "Heavy-Duty Degreaser", price: 4.99, category: "Degreasers" },
     { name: "Bathroom Cleaner", price: 3.49, category: "Bathroom Cleaners" },
     { name: "Sanitizing Spray", price: 4.99, category: "Sanitizers" },
+
 
     // 20 additional products
     { name: "All-Purpose Cleaner", price: 3.49, category: "Surface Cleaners" },
@@ -36,6 +39,34 @@ const Stuff = [
     { name: "Carpet Spot Cleaner", price: 4.99, category: "Carpet Cleaners" }
 ];
 
-console.log(Stuff[0].name);
-console.log(Stuff[3].name);
+
+
+
+
+
+function filter(array,category){
+    let relevant = [];
+    for(items of array){
+        if(items.category === category){
+            relevant.push(items.name);
+        }
+        else{
+            return "Not found";
+        }
+
+
+    }
+    return relevant;
+}
+
+
+
+
+console.log(filter(Stuff,"Bathroom Cleaners"));
+
+
+
+
+
+
 
