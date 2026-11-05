@@ -1,0 +1,44 @@
+html,body,*{
+font-size: 16px;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    background-color: red;
+    gap: auto;
+    margin: 4rem auto;
+    padding: 10 px;
+}
+
+.card #name{
+    margin: auto;
+    padding: auto;
+}
+
+.card #price{
+    margin: auto;
+    padding: auto;
+}
+
+.card #category{
+    margin: auto;
+    padding: auto;
+}
+
+.card #img{
+    margin: 5px;
+    padding: 10px;
+}
+
+
+
+
+
