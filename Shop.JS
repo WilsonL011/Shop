@@ -171,11 +171,19 @@ function Addcart(cart,...items){
 
 const header = document.querySelector(".name")
 
-header.textContent = `${catalog[0].name}`
+
 
 // Stuff that hooks into CSS//
 
+function inject(){
+    const name = document.querySelector("#name");
+    const category = document.querySelector("#category");
+    const price = document.querySelector("#price");
+    const img = document.getElementById("#img");
 
+name.textContent = `${Stuff[x].name}`;
+category.textContent= ``
+}
 
 
 
