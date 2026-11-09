@@ -184,10 +184,11 @@ function inject(indexplace){
 
     name.textContent = product.name;
     category.textContent = product.category;
-    price.textContent= `${$product.price}`;
+    price.textContent= `$${product.price}`;
     img.src = product.image;
 
 }
 
+inject(0); //test!!!
 
 
