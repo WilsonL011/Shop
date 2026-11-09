@@ -179,10 +179,10 @@ function inject(){
     const name = document.querySelector("#name");
     const category = document.querySelector("#category");
     const price = document.querySelector("#price");
-    const img = document.getElementById("#img");
+    const img = document.querySelector("#img");
+    const product = Stuff[index];
 
-name.textContent = `${Stuff[x].name}`;
-category.textContent= ``
+
 }
 
 
