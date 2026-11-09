@@ -26,24 +26,25 @@ padding: auto;
     padding: 10 px;
 }
 
-.card #name{
-    margin: 15;
-    padding: 5;
+.card #Name{
+    margin: 15px;
+    padding: 5px;
+    font-size: 20px;
 }
 
-.card #price{
-    margin: 0;
-    padding: 0;
+.card #Price{
+    margin: 0px;
+    padding: 0px;
 }
 
-.card #category{
-    margin: 0;
-    padding: 0;
+.card #Category{
+    margin: 0px;
+    padding: 0px;
 }
 
 .card #img{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 .card #button{
     margin: auto;
