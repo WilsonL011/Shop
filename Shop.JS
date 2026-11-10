@@ -175,20 +175,38 @@ const header = document.querySelector(".name")
 
 // Stuff that hooks into CSS//
 
-function inject(indexplace){
-    const name = document.querySelector("#name");
-    const category = document.querySelector("#category");
-    const price = document.querySelector("#price");
-    const img = document.querySelector("#img");
-    const product = Stuff[indexplace];
+// function inject(indexplace){
+//     const name = document.querySelector("#name");
+//     const category = document.querySelector("#category");
+//     const price = document.querySelector("#price");
+//     const img = document.querySelector("#img");
+//     const product = Stuff[indexplace];
 
-    name.textContent = product.name;
-    category.textContent = product.category;
-    price.textContent= `$${product.price}`;
-    img.src = product.image;
+//     name.textContent = product.name;
+//     category.textContent = product.category;
+//     price.textContent= `$${product.price}`;
+//     img.src = product.image;
 
-}
+// }
 
-inject(0); //test!!!
+// inject(0); //test!!!
+
+// Old func ^
 
 
+
+function inject(){
+    const container = document.querySelectorAll(".card-container")
+    container.forEach((item) => { 
+        container.insertAdjacentHTML(
+            "beforeend",
+            `<div class = "card">
+            <h2 class = "Name">${item.name}</h2>
+            <p class="Category"></p>
+            </div>`
+        );
+    }
+    )};
+
+
+//  <h2 class = "name">${item.name}</h2>
