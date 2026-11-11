@@ -56,6 +56,53 @@ gap: 20px;
 }
 
 
+/* HERO CONTENT */
+
+
+.hero{
+    display:flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(#000000cc, rgba(106, 187, 241, 0.8)), url(Imgsrc/VoyagerInSpaceeeeee.png);
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    height: 95vh;
+}
+
+.hero__content{ 
+    width: 60rem;
+    padding: 2rem;
+    padding: 2rem;
+}
+.hero h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+
+}
+.hero h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+.hero p{
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.4rem 3.2rem;
+    font-size: 2rem;
+    color: white;
+    background-color:aqua;
+}
+
+
 
 
 
