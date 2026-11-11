@@ -169,7 +169,6 @@ function Addcart(cart,...items){
     // TODO: Use .Splice() to replace certain values, and indexof() to check
 }
 
-const header = document.querySelector(".name")
 
 
 
@@ -196,17 +195,22 @@ const header = document.querySelector(".name")
 
 
 function inject(){
-    const container = document.querySelectorAll(".card-container")
-    container.forEach((item) => { 
-        container.insertAdjacentHTML(
+    const Box = document.querySelector(".card-container");
+     Stuff.forEach((item) => { 
+        Box.insertAdjacentHTML(
             "beforeend",
             `<div class = "card">
             <h2 class = "Name">${item.name}</h2>
-            <p class="Category"></p>
+            <p class= "Category">${item.category}</p>
+            <img class = "Image" src = "${item.image}" alt = "${item.name} image">
+            <p class = "Price"> $${item.price}</p>
+            <button class = "Button">Add to Cart</button>
             </div>`
+
         );
     }
     )};
 
+inject();
 
 //  <h2 class = "name">${item.name}</h2>
