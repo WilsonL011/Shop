@@ -8,10 +8,10 @@
 
 const Stuff = [
     // Detergents
-    { name: "Eco Friendly", price: 28.99, category: "Detergents", image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRf84t2ssxs7fO9r9juBajl8hWlL6ZCJaOXiwWHMY1329nZjDmUA2-200iy-H0cwAdVWFdsPNLsJMoMKcyMv3J3wfCRBeihhw"},
-    { name: "Liquid Detergent", price: 10.99, category: "Detergents", image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT0CIsiThUWPzrWnh6zy53oRV6j4K-W3LWikf9oFW_EID5ZiSanpbHQup-n4zriJDqpgLnss0pn4vD4i_Cmwtr4j1psu1aZktlCSiuIJxZvPQldpgNCO6C3pw" },
-    { name: "Detergent Pods", price: 10.99, category: "Detergents", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ66DAt-itTcpnOA2rAyyVz9muMm8XimTIf6rjhl2XhEQ7WTmZaiY5WZ_riOoRgeqf_FCFVDyRE_fRiAxdczc_sGJizOYxD" },
-    { name: "Free And Clear", price: 18.99, category: "Detergents", image: "" },
+    { name: "Eco Friendly", price: 28.99, category: "Detergents", image: "imgs/Eco Friendly.png"},
+    { name: "Liquid Detergent", price: 10.99, category: "Detergents", image: "imgs/Liquid Detergent.png" },
+    { name: "Detergent Pods", price: 10.99, category: "Detergents", image: "imgs/Detergent Pods.png" },
+    { name: "Free And Clear", price: 18.99, category: "Detergents", image: "imgs/Free And Clear.png" },
 
 
     // Orphans
