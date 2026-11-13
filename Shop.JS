@@ -15,16 +15,16 @@ const Stuff = [
 
 
     // Orphans
-    { name: "Heavy-Duty Degreaser", price: 4.99, category: "Degreasers", image: "" },
-    { name: "Bathroom Cleaner", price: 3.49, category: "Bathroom Cleaners", image: "" },
-    { name: "Sanitizing Spray", price: 4.99, category: "Sanitizers", image: "" },
+    { name: "Heavy-Duty Degreaser", price: 4.99, category: "Degreasers", image: "imgs/Heavy-Duty Degreaser.png" },
+    { name: "Bathroom Cleaner", price: 3.49, category: "Bathroom Cleaners", image: "imgs/Bathroom Cleaner.png" },
+    { name: "Sanitizing Spray", price: 4.99, category: "Sanitizers", image: "imgs/Sanitizing Spray.png" },
 
 
     // more cleaners
-    { name: "All-Purpose Cleaner", price: 3.49, category: "Surface Cleaners", image: "" },
-    { name: "Glass Cleaner", price: 2.49, category: "Glass Cleaners", image: "" },
-    { name: "Disinfecting Wipes", price: 3.19, category: "Sanitizers", image: "" },
-    { name: "Disinfectant Spray", price: 4.99, category: "Sanitizers", image: "" },
+    { name: "All-Purpose Cleaner", price: 3.49, category: "Surface Cleaners", image: "imgs/All-Purpose Cleaner.png" },
+    { name: "Glass Cleaner", price: 2.49, category: "Glass Cleaners", image: "imgs/Glass Cleaner.png" },
+    { name: "Disinfecting Wipes", price: 3.19, category: "Sanitizers", image: "imgs/Disinfecting Wipes.png" },
+    { name: "Disinfectant Spray", price: 4.99, category: "Sanitizers", image: "imgs/Disinfectant Spray.png" },
     { name: "Bleach", price: 3.99, category: "Bleach", image: "" },
     { name: "Toilet Bowl Cleaner", price: 2.49, category: "Bathroom Cleaners", image: "" },
     { name: "Floor Cleaner", price: 4.99, category: "Floor Cleaners", image: "" },
