@@ -25,15 +25,15 @@ const Stuff = [
     { name: "Glass Cleaner", price: 2.49, category: "Glass Cleaners", image: "imgs/Glass Cleaner.png" },
     { name: "Disinfecting Wipes", price: 3.19, category: "Sanitizers", image: "imgs/Disinfecting Wipes.png" },
     { name: "Disinfectant Spray", price: 4.99, category: "Sanitizers", image: "imgs/Disinfectant Spray.png" },
-    { name: "Bleach", price: 3.99, category: "Bleach", image: "" },
-    { name: "Toilet Bowl Cleaner", price: 2.49, category: "Bathroom Cleaners", image: "" },
-    { name: "Floor Cleaner", price: 4.99, category: "Floor Cleaners", image: "" },
-    { name: "Dish Soap", price: 2.99, category: "Dishwashing", image: "" },
-    { name: "Powder Cleanser", price: 0.99, category: "Scouring Cleaners", image: "" },
-    { name: "Cream Cleanser", price: 2.99, category: "Scouring Cleaners", image: "" },
-    { name: "Mop", price: 10.99, category: "Cleaning Tools", image: "" },
-    { name: "Broom", price: 4.99, category: "Cleaning Tools", image: "" },
-    { name: "Dustpan", price: 2.99, category: "Cleaning Tools", image: "" },
+    { name: "Bleach", price: 3.99, category: "Bleach", image: "imgs/Bleach.png" },
+    { name: "Toilet Bowl Cleaner", price: 2.49, category: "Bathroom Cleaners", image: "imgs/Toliet Bowl Cleaner.png" },
+    { name: "Floor Cleaner", price: 4.99, category: "Floor Cleaners", image: "imgs/Floor Cleaner.png" },
+    { name: "Dish Soap", price: 2.99, category: "Dishwashing", image: "imgs/Dish Soap.png" },
+    { name: "Powder Cleanser", price: 0.99, category: "Scouring Cleaners", image: "imgs/Powder Cleanser.png" },
+    { name: "Cream Cleanser", price: 2.99, category: "Scouring Cleaners", image: "imgs/Cream Cleanser.png" },
+    { name: "Mop", price: 10.99, category: "Cleaning Tools", image: "imgs/Mop.png" },
+    { name: "Broom", price: 4.99, category: "Cleaning Tools", image: "imgs/Broom.png" },
+    { name: "Dustpan", price: 2.99, category: "Cleaning Tools", image: "imgs/Dustpan.png" },
     { name: "Scrub Brush", price: 3.49, category: "Cleaning Tools", image: "" },
     { name: "Sponges (4-Pack)", price: 2.99, category: "Cleaning Tools", image: "" },
     { name: "Microfiber Cloths (3-Pack)", price: 4.99, category: "Cleaning Tools", image: "" },
@@ -194,7 +194,7 @@ function Addcart(cart,...items){
 
 
 
-function inject(){
+function inject(items){
     const Box = document.querySelector(".card-container");
      Stuff.forEach((item) => { 
         Box.insertAdjacentHTML(
@@ -204,13 +204,13 @@ function inject(){
             <p class= "Category">${item.category}</p>
             <img class = "Image" src = "${item.image}" alt = "${item.name} image">
             <p class = "Price"> $${item.price}</p>
-            <button class = "Button">Add to Cart</button>
+            <button class = "button">Add to Cart</button>
             </div>`
 
         );
     }
     )};
 
-inject();
+inject(Stuff);
 
 //  <h2 class = "name">${item.name}</h2>
