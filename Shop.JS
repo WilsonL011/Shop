@@ -8,29 +8,29 @@
 
 const Stuff = [
     // Detergents
-    { name: "Eco Friendly", price: 28.99, category: "Detergents", image: "imgs/Eco Friendly.png"},
-    { name: "Liquid Detergent", price: 10.99, category: "Detergents", image: "imgs/Liquid Detergent.png" },
-    { name: "Detergent Pods", price: 10.99, category: "Detergents", image: "imgs/Detergent Pods.png" },
-    { name: "Free And Clear", price: 18.99, category: "Detergents", image: "imgs/Free And Clear.png" },
+    { name: "Eco Friendly", price: 28.99, category: "Laundry & Detergents", image: "imgs/Eco Friendly.png"},
+    { name: "Liquid Detergent", price: 10.99, category: "Laundry & Detergents", image: "imgs/Liquid Detergent.png" },
+    { name: "Detergent Pods", price: 10.99, category: "Laundry & Detergents", image: "imgs/Detergent Pods.png" },
+    { name: "Free And Clear", price: 18.99, category: "Laundry & Detergents", image: "imgs/Free And Clear.png" },
 
 
     // Orphans
-    { name: "Heavy-Duty Degreaser", price: 4.99, category: "Degreasers", image: "imgs/Heavy-Duty Degreaser.png" },
-    { name: "Bathroom Cleaner", price: 3.49, category: "Bathroom Cleaners", image: "imgs/Bathroom Cleaner.png" },
-    { name: "Sanitizing Spray", price: 4.99, category: "Sanitizers", image: "imgs/Sanitizing Spray.png" },
+    { name: "Heavy-Duty Degreaser", price: 4.99, category: "Surface Cleaners", image: "imgs/Heavy-Duty Degreaser.png" },
+    { name: "Bathroom Cleaner", price: 3.49, category: "Surface Cleaners", image: "imgs/Bathroom Cleaner.png" },
+    { name: "Sanitizing Spray", price: 4.99, category: "Disinfectants & Sanitizers", image: "imgs/Sanitizing Spray.png" },
 
 
     // more cleaners
     { name: "All-Purpose Cleaner", price: 3.49, category: "Surface Cleaners", image: "imgs/All-Purpose Cleaner.png" },
-    { name: "Glass Cleaner", price: 2.49, category: "Glass Cleaners", image: "imgs/Glass Cleaner.png" },
-    { name: "Disinfecting Wipes", price: 3.19, category: "Sanitizers", image: "imgs/Disinfecting Wipes.png" },
-    { name: "Disinfectant Spray", price: 4.99, category: "Sanitizers", image: "imgs/Disinfectant Spray.png" },
-    { name: "Bleach", price: 3.99, category: "Bleach", image: "imgs/Bleach.png" },
-    { name: "Toilet Bowl Cleaner", price: 2.49, category: "Bathroom Cleaners", image: "imgs/Toliet Bowl Cleaner.png" },
-    { name: "Floor Cleaner", price: 4.99, category: "Floor Cleaners", image: "imgs/Floor Cleaner.png" },
-    { name: "Dish Soap", price: 2.99, category: "Dishwashing", image: "imgs/Dish Soap.png" },
-    { name: "Powder Cleanser", price: 0.99, category: "Scouring Cleaners", image: "imgs/Powder Cleanser.png" },
-    { name: "Cream Cleanser", price: 2.99, category: "Scouring Cleaners", image: "imgs/Cream Cleanser.png" },
+    { name: "Glass Cleaner", price: 2.49, category: "Surface Cleaners", image: "imgs/Glass Cleaner.png" },
+    { name: "Disinfecting Wipes", price: 3.19, category: "Disinfectants & Sanitizers", image: "imgs/Disinfecting Wipes.png" },
+    { name: "Disinfectant Spray", price: 4.99, category: "Disinfectants & Sanitizers", image: "imgs/Disinfectant Spray.png" },
+    { name: "Bleach", price: 3.99, category: "Disinfectants & Sanitizers", image: "imgs/Bleach.png" },
+    { name: "Toilet Bowl Cleaner", price: 2.49, category: "Surface Cleaners", image: "imgs/Toliet Bowl Cleaner.png" },
+    { name: "Floor Cleaner", price: 4.99, category: "Surface Cleaners", image: "imgs/Floor Cleaner.png" },
+    { name: "Dish Soap", price: 2.99, category: "Household Essentials", image: "imgs/Dish Soap.png" },
+    { name: "Powder Cleanser", price: 0.99, category: "Surface Cleaners", image: "imgs/Powder Cleanser.png" },
+    { name: "Cream Cleanser", price: 2.99, category: "Surface Cleaners", image: "imgs/Cream Cleanser.png" },
     { name: "Mop", price: 10.99, category: "Cleaning Tools", image: "imgs/Mop.png" },
     { name: "Broom", price: 4.99, category: "Cleaning Tools", image: "imgs/Broom.png" },
     { name: "Dustpan", price: 2.99, category: "Cleaning Tools", image: "imgs/Dustpan.png" },
@@ -38,9 +38,9 @@ const Stuff = [
     { name: "Sponges (4-Pack)", price: 2.99, category: "Cleaning Tools", image: "" },
     { name: "Microfiber Cloths (3-Pack)", price: 4.99, category: "Cleaning Tools", image: "" },
     { name: "Rubber Gloves", price: 2.99, category: "Cleaning Tools", image: "" },
-    { name: "Paper Towels", price: 4.49, category: "Paper Products", image: "" },
-    { name: "Trash Bags", price: 6.99, category: "Waste Disposal", image: "" },
-    { name: "Carpet Spot Cleaner", price: 4.99, category: "Carpet Cleaners", image: "" }
+    { name: "Paper Towels", price: 4.49, category: "Household Essentials", image: "" },
+    { name: "Trash Bags", price: 6.99, category: "Household Essentials", image: "" },
+    { name: "Carpet Spot Cleaner", price: 4.99, category: "Surface Cleaners", image: "" }
 ];
 
 
@@ -164,6 +164,7 @@ function Addcart(cart,...items){
 
 function inject(items){
     const Box = document.querySelector(".card-container");
+      Box.innerHTML = ""; // Clear The Entire Container Before Injecting New Items
      items.forEach((item) => { 
         Box.insertAdjacentHTML(
             "beforeend",
@@ -180,5 +181,4 @@ function inject(items){
     )};
 
 inject(Stuff);
-
 //  <h2 class = "name">${item.name}</h2>
