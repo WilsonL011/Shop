@@ -35,6 +35,12 @@ margin: 10px;
 padding: 3px;
 }
 
+.filter-button{
+    margin: 8px;
+    padding: 5px;
+    background-color:#F5D77C;
+}
+
 .card{
     display: flex;
     justify-content: space-between; /*I have no idea what this does */

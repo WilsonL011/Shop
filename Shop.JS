@@ -34,13 +34,13 @@ const Stuff = [
     { name: "Mop", price: 10.99, category: "Cleaning Tools", image: "imgs/Mop.png" },
     { name: "Broom", price: 4.99, category: "Cleaning Tools", image: "imgs/Broom.png" },
     { name: "Dustpan", price: 2.99, category: "Cleaning Tools", image: "imgs/Dustpan.png" },
-    { name: "Scrub Brush", price: 3.49, category: "Cleaning Tools", image: "" },
-    { name: "Sponges (4-Pack)", price: 2.99, category: "Cleaning Tools", image: "" },
-    { name: "Microfiber Cloths (3-Pack)", price: 4.99, category: "Cleaning Tools", image: "" },
-    { name: "Rubber Gloves", price: 2.99, category: "Cleaning Tools", image: "" },
-    { name: "Paper Towels", price: 4.49, category: "Household Essentials", image: "" },
-    { name: "Trash Bags", price: 6.99, category: "Household Essentials", image: "" },
-    { name: "Carpet Spot Cleaner", price: 4.99, category: "Surface Cleaners", image: "" }
+    { name: "Scrub Brush", price: 3.49, category: "Cleaning Tools", image: "imgs/Scrub Brush.png" },
+    { name: "Sponges (4-Pack)", price: 2.99, category: "Cleaning Tools", image: "imgs/Sponges (4pack).png" },
+    { name: "Microfiber Cloths (3-Pack)", price: 4.99, category: "Cleaning Tools", image: "imgs/Microfiber Cloths (3-Pack).png" },
+    { name: "Rubber Gloves", price: 2.99, category: "Cleaning Tools", image: "imgs/Rubber Gloves.png" },
+    { name: "Paper Towels", price: 4.49, category: "Household Essentials", image: "imgs/Paper Towels.png" },
+    { name: "Trash Bags", price: 6.99, category: "Household Essentials", image: "imgs/Trash Bags.png" },
+    { name: "Carpet Spot Cleaner", price: 4.99, category: "Surface Cleaners", image: "imgs/Carpet Spot Cleaner.png" }
 ];
 
 
