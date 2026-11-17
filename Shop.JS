@@ -182,6 +182,20 @@ function inject(items){
 
 inject(Stuff);
 //  <h2 class = "name">${item.name}</h2>
-function filterByCategory(items,category){
+
+
+function filterByCategory(items){
     const buttons = document.querySelectorAll(".filter-button");
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const filteredItems = items.filter((item) => item.category === button.dataset.category);
+                if (button.dataset.category === "All"){
+                    inject(items);
+                }
+            else{inject(filteredItems);}
+            console.log(button.dataset.category);
+        });
+    });
 }
+
+filterByCategory(Stuff);
