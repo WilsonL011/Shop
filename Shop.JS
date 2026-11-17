@@ -180,8 +180,6 @@ function inject(items){
     }
     )};
 
-inject(Stuff);
-//  <h2 class = "name">${item.name}</h2>
 
 
 function filterByCategory(items){
