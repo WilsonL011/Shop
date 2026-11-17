@@ -40,6 +40,11 @@ padding: 3px;
     padding: 5px;
     background-color:#F5D77C;
 }
+.filter-button:hover{
+    cursor: pointer;
+    background-color:#a18f58;
+}
+
 
 .card{
     display: flex;
