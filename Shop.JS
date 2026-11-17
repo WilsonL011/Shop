@@ -53,7 +53,7 @@ function filter(array, category) {
 
     for (const items of array) {
         if (items.category === category) {
-            relevant.push(items.name);
+            relevant.push(items); // was orginally items.name, we need items
         }
     }
 
@@ -112,6 +112,7 @@ function AddCart(cart, ...items) {
 }
 
 
+
 // const target = Stuff.find((i) => i.name === items[i]);
     // const cost = target.price;
     // if (target){
@@ -152,15 +153,6 @@ function PrintTotal(placeholder){
 
 
 
-console.log(filter(Stuff, "Bathroom Cleaners"));
-
-
-console.log(AddCart(cart, "Broom", "Carpet Spot Cleaner"));
-
-
-console.log(removecart(cart, "Broom"));
-
-console.log(PrintTotal());
 
 
 
@@ -170,33 +162,9 @@ function Addcart(cart,...items){
 }
 
 
-
-
-// Stuff that hooks into CSS//
-
-// function inject(indexplace){
-//     const name = document.querySelector("#name");
-//     const category = document.querySelector("#category");
-//     const price = document.querySelector("#price");
-//     const img = document.querySelector("#img");
-//     const product = Stuff[indexplace];
-
-//     name.textContent = product.name;
-//     category.textContent = product.category;
-//     price.textContent= `$${product.price}`;
-//     img.src = product.image;
-
-// }
-
-// inject(0); //test!!!
-
-// Old func ^
-
-
-
 function inject(items){
     const Box = document.querySelector(".card-container");
-     Stuff.forEach((item) => { 
+     items.forEach((item) => { 
         Box.insertAdjacentHTML(
             "beforeend",
             `<div class = "card">
