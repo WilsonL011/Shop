@@ -108,7 +108,7 @@ function AddCart(cart, ...items) {
     globaltotal += totalprice; // global total added by the stuff in the cart
 
 
-    return cart.join(", ") + " Total: $" + totalprice;
+    return cart.join(", ") + " Total: $" + globaltotal;
 }
 
 
@@ -141,7 +141,7 @@ function removecart(cart, ...items) {
 
 
 
-    return cart.join(", ") + " Total: $" + totalprice;
+    return cart.join(", ") + " Total: $" + globaltotal;
 }
 
 
@@ -179,8 +179,10 @@ function inject(items){
         );
     }
     )};
+//  <h2 class = "name">${item.name}</h2>
 
 
+inject(Stuff); // DO NOT DELETE IT IS ATLAS HOLDING UP THE SITE
 
 function filterByCategory(items){
     const buttons = document.querySelectorAll(".filter-button");
