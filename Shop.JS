@@ -182,3 +182,5 @@ function inject(items){
 
 inject(Stuff);
 //  <h2 class = "name">${item.name}</h2>
+
+const buttons = document.querySelectorAll(".filter-button");
