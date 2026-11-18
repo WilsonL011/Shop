@@ -106,7 +106,7 @@ function AddCart(cart, ...items) {
         cart.push(item.name);
     }
     globaltotal += totalprice; // global total added by the stuff in the cart
-
+    Math.round(globaltotal*100)/100; //pretty sure this stops the sum from being $-0.00????
 
     return cart.join(", ") + " Total: $" + globaltotal;
 }
@@ -138,7 +138,7 @@ function removecart(cart, ...items) {
         cart.splice(index, 1); // I used mdn. Splice accepts three parameters, and they tell you at what index value should be deleted/replaceed
     }
     globaltotal -= totalprice; // global total added by the stuff in the cart
-
+    Math.round(globaltotal*100)/100; 
 
 
     return cart.join(", ") + " Total: $" + globaltotal;
@@ -156,7 +156,7 @@ function PrintTotal(placeholder){
 
 
 
-// probable future replacement to account for quanities of the items passed
+// probable future replacement to account for quanities of the items passed (nevermind)
 function Addcart(cart,...items){
     // TODO: Use .Splice() to replace certain values, and indexof() to check
 }
@@ -206,7 +206,6 @@ filterByCategory(Stuff); // The planet in question
 function checkoutPopulate(cart) {
     const cartcontainer = document.querySelector(".cart-container");
     cartcontainer.innerHTML = "";
-    
 cart.forEach((item) => {
     const target = Stuff.find((i) => i.name === item);
     cartcontainer.insertAdjacentHTML(
@@ -235,7 +234,7 @@ ProductContainer.addEventListener("click", (event) => {
 
 const checkoutcontainer = document.querySelector(".cart-container");
 checkoutcontainer.addEventListener("click", (event) => {
-  if (event.target.matches(".remove-button")) { 
+  if (event.target.matches(".remove-button")) {
     removecart(cart, event.target.dataset.name);
     checkoutPopulate(cart);
   }
