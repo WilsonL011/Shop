@@ -173,7 +173,7 @@ function inject(items){
             <p class= "Category">${item.category}</p>
             <img class = "Image" src = "${item.image}" alt = "${item.name} image">
             <p class = "Price"> $${item.price}</p>
-            <button class = "button" data-name = "${item.name}">Add to Cart</button>
+            <button class = "Addtocartbutton" data-name = "${item.name}">Add to Cart</button>
             </div>`
 
         );
@@ -205,28 +205,44 @@ filterByCategory(Stuff); // The planet in question
 
 function checkoutPopulate(cart) {
     const cartcontainer = document.querySelector(".cart-container");
-
     cartcontainer.innerHTML = "";
+    
+cart.forEach((item) => {
+    const target = Stuff.find((i) => i.name === item);
+    cartcontainer.insertAdjacentHTML(
+        "beforeend",
+        `<div class="cart-item">
+            <h2 class="Name">${target.name}</h2>
+            <p class="Price">$${target.price}</p>
+            <p class="Category">${target.category}</p>
+            <button class="remove-button" data-name="${target.name}">Remove</button>
+        </div>`
+    );
+});
 
-    // TODO 3: Loop through cart
-    cart.forEach((item) => {
-        cartcontainer.insertAdjacentHTML(
-            "beforeend",
-           `<h2 class = "Name">${item}</h2>` 
-           
-        )
 
-    });
-
-    // TODO 4: Look up each product in Stuff
-
-    // TODO 5: Generate the cart item's HTML
-
-    // TODO 6: Update the displayed total
+const TotalLabel = document.querySelector(".cart-total");
+TotalLabel.textContent = `Total: $${globaltotal}`;
 }
 
 
+const productContainer = document.querySelector(".card-container");
+productContainer.addEventListener("click", (event) => {
+  if (event.target.matches(".Addtocartbutton")) { // .matches just matches against the class/element
+    AddCart(cart, event.target.dataset.name);
+    checkoutPopulate(cart);
+  }
+});
+
+const checkoutcontainer = document.querySelector(".cart-container");
+checkoutcontainer.addEventListener("click", (event) => {
+  if (event.target.matches(".remove-button")) { 
+    removecart(cart, event.target.dataset.name);
+    checkoutPopulate(cart);
+  }
+});
+
 
 function checkout (cart){
-//Todo: Make it Check for duplicates, make it hook to the future remove hook functions.
+// Checkout
 }

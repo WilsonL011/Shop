@@ -92,6 +92,15 @@ padding: 3px;
     background-color:#a18f58;
     cursor: pointer;
 }
+.Addtocartbutton{
+    margin: 8px;
+    padding: 5px;
+    background-color:#F5D77C;
+}
+.Addtocartbutton:hover{
+    background-color:#a18f58;
+    cursor: pointer;
+}
 
 .background{
     background-color:rgba(216, 237, 245, 1);
@@ -201,6 +210,13 @@ background-color:red;
     color: #000000;
 }
 
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
 .checkout-button {
     margin: 8px;
     padding: 10px 20px;
@@ -209,6 +225,16 @@ background-color:red;
 
 .checkout-button:hover {
     background-color: #a18f58;
+    cursor: pointer;
+}
+
+.remove-button{
+    margin: 8px;
+    padding: 5px;
+    background-color:#F5D77C;
+}
+.remove-button:hover{
+    background-color:#a18f58;
     cursor: pointer;
 }
 
