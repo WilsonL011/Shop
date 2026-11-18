@@ -173,7 +173,7 @@ function inject(items){
             <p class= "Category">${item.category}</p>
             <img class = "Image" src = "${item.image}" alt = "${item.name} image">
             <p class = "Price"> $${item.price}</p>
-            <button class = "button">Add to Cart</button>
+            <button class = "button" data-name = "${item.name}">Add to Cart</button>
             </div>`
 
         );
@@ -198,4 +198,9 @@ function filterByCategory(items){
     });
 }
 
-filterByCategory(Stuff);
+filterByCategory(Stuff); // The planet in question
+
+
+function checkout (cart){
+//Todo: Make it Check for duplicates, make it hook to the future remove hook functions.
+}
