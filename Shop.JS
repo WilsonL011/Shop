@@ -201,6 +201,32 @@ function filterByCategory(items){
 filterByCategory(Stuff); // The planet in question
 
 
+
+
+function checkoutPopulate(cart) {
+    const cartcontainer = document.querySelector(".cart-container");
+
+    cartcontainer.innerHTML = "";
+
+    // TODO 3: Loop through cart
+    cart.forEach((item) => {
+        cartcontainer.insertAdjacentHTML(
+            "beforeend",
+           `<h2 class = "Name">${item}</h2>` 
+           
+        )
+
+    });
+
+    // TODO 4: Look up each product in Stuff
+
+    // TODO 5: Generate the cart item's HTML
+
+    // TODO 6: Update the displayed total
+}
+
+
+
 function checkout (cart){
 //Todo: Make it Check for duplicates, make it hook to the future remove hook functions.
 }
