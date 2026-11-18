@@ -220,14 +220,13 @@ cart.forEach((item) => {
     );
 });
 
-
 const TotalLabel = document.querySelector(".cart-total");
-TotalLabel.textContent = `Total: $${globaltotal}`;
+TotalLabel.textContent = `Total: $${globaltotal.toFixed(2)}`;
 }
 
 
-const productContainer = document.querySelector(".card-container");
-productContainer.addEventListener("click", (event) => {
+const ProductContainer = document.querySelector(".card-container");
+ProductContainer.addEventListener("click", (event) => {
   if (event.target.matches(".Addtocartbutton")) { // .matches just matches against the class/element
     AddCart(cart, event.target.dataset.name);
     checkoutPopulate(cart);
