@@ -47,26 +47,26 @@ const Stuff = [
 
 // functions below
 
-function filter(array, category) {
-    let relevant = [];
+// function filter(array, category) {
+//     let relevant = [];
 
 
-    for (const items of array) {
-        if (items.category === category) {
-            relevant.push(items); // was orginally items.name, we need items
-        }
-    }
+//     for (const items of array) {
+//         if (items.category === category) {
+//             relevant.push(items); // was orginally items.name, we need items
+//         }
+//     }
 
 
-    if (relevant.length === 0) {
-        return "Not found";
-    }
+//     if (relevant.length === 0) {
+//         return "Not found";
+//     }
 
 
-    return relevant;
-}
+//     return relevant;
+// }
 
-
+//I ended up just using .filter() instead -_-
 
 
 
@@ -226,7 +226,7 @@ TotalLabel.textContent = `Total: $${globaltotal.toFixed(2)}`;
 
 const ProductContainer = document.querySelector(".card-container");
 ProductContainer.addEventListener("click", (event) => {
-  if (event.target.matches(".Addtocartbutton")) { // .matches just matches against the class/element
+  if (event.target.matches(".Addtocartbutton")) { // .matches just matches against the class/element (https://developer.mozilla.org/en-US/docs/Web/API/Element/matches my goat)
     AddCart(cart, event.target.dataset.name);
     checkoutPopulate(cart);
   }
