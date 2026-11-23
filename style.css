@@ -29,7 +29,7 @@ margin: 20px;
 display: flex;
 justify-content: center;
 width: 100%;
-font-size: 20px;
+font-size: 30px;
 margin: 10px;
 padding: 3px;
 }
@@ -38,6 +38,7 @@ padding: 3px;
     margin: 8px;
     padding: 5px;
     background-color:#F5D77C;
+    border-radius: 8px;
 }
 .filter-button:hover{
     cursor: pointer;
@@ -96,6 +97,7 @@ padding: 3px;
     margin: 8px;
     padding: 5px;
     background-color:#F5D77C;
+    border-radius: 8px;
 }
 .Addtocartbutton:hover{
     background-color:#a18f58;
@@ -222,6 +224,7 @@ background-color:red;
     margin: 8px;
     padding: 10px 20px;
     background-color: #F5D77C;
+    border-radius: 8px;
 }
 
 .checkout-button:hover {
@@ -233,6 +236,7 @@ background-color:red;
     margin: 8px;
     padding: 5px;
     background-color:#F5D77C;
+    border-radius: 8px;
 }
 .remove-button:hover{
     background-color:#a18f58;
